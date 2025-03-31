@@ -1,0 +1,50 @@
+.extractor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  .custom-file-upload {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+
+    &:hover {
+      background: #0056b3;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  .readonly-textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    resize: none;
+    cursor: not-allowed;
+  }
+}

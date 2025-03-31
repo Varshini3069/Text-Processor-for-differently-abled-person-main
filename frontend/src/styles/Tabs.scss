@@ -1,0 +1,39 @@
+.tabs-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+
+  .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #007bff;
+      }
+
+      &.active {
+        font-weight: bold;
+        color: #007bff;
+        border-bottom: 2px solid #007bff;
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
